@@ -8,9 +8,9 @@ class ClapTrap
 {
     private:
         std::string _Name;
-        unsigned int _hp = 10;
-        unsigned int _ep = 10;
-        unsigned int _ad = 0;
+        unsigned int _hp;
+        unsigned int _ep;
+        unsigned int _ad;
     public:
         ClapTrap();
         ClapTrap(std::string const Name);

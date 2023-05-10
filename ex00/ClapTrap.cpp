@@ -1,15 +1,15 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap()
+ClapTrap::ClapTrap() : _hp(10) , _ep(10) , _ad(0)
 {
     std::cout << "ClapTrap created." << std::endl;
 }
-ClapTrap::ClapTrap(std::string const Name) : _Name(Name)
+ClapTrap::ClapTrap(std::string const Name) : _Name(Name) , _hp(10) , _ep(10) , _ad(0)
 {
     std::cout << Name << " ClapTrap created." << std::endl;
 }
 
-ClapTrap::ClapTrap(ClapTrap const &c) : _Name(c._Name)
+ClapTrap::ClapTrap(ClapTrap const &c) : _Name(c._Name) , _hp(10) , _ep(10) , _ad(0)
 {
     std::cout << "ClapTrap created from" + c._Name << std::endl;
 }
