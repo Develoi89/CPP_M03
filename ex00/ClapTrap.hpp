@@ -12,11 +12,14 @@ class ClapTrap
         unsigned int _ep = 10;
         unsigned int _ad = 0;
     public:
+        ClapTrap();
         ClapTrap(std::string const Name);
         ClapTrap(ClapTrap const &c);
         ClapTrap & operator = (ClapTrap const &c);
         ~ClapTrap();
 
+        void setName(std::string name);
+        std::string getName(void);
         void attack(const std::string &target);
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
