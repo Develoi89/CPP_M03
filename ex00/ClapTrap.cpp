@@ -22,13 +22,13 @@ ClapTrap & ClapTrap::operator = (ClapTrap const &c)
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "ClapTrap destroyed." << std::endl;
+    std::cout << _Name + " ClapTrap destroyed." << std::endl;
 }
 
 void ClapTrap::setName(std::string name)
 {
     _Name = name;
-    std::cout << "the class was named " + getName() << std::endl;
+    std::cout << "The class was named " + getName() + "." << std::endl;
 }
 std::string ClapTrap::getName(void)
 {
@@ -39,7 +39,7 @@ void ClapTrap::attack(const std::string &target)
 {
     if(_ep > 0 && _hp > 0)
     {
-        std::cout << _Name + " attacks " + target + " causing " << _ad << " points of damage" << std::endl; 
+        std::cout << _Name + " attacks " + target + " causing " << _ad << " points of damage." << std::endl; 
         --_ep;
     }
     else
@@ -50,7 +50,7 @@ void ClapTrap::takeDamage(unsigned int amount)
     if(_hp - amount > 0)
     {
         _hp -= amount;
-        std::cout << _Name + " takes " << amount << "points of damage." << std::endl;
+        std::cout << _Name + " takes " << amount << " points of damage." << std::endl;
     }
     else
     {
