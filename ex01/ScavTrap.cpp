@@ -40,7 +40,7 @@ void ScavTrap::attack(const std::string &target)
 {
     if(_ep > 0 && _hp > 0)
     {
-        std::cout << _Name + " attacks " + target + " causing " << _ad << " points of damage." << std::endl; 
+        std::cout << _Name + " attacks so hard " + target + " causing " << _ad << " points of damage." << std::endl; 
         --_ep;
     }
     else
@@ -50,28 +50,4 @@ void ScavTrap::attack(const std::string &target)
 void ScavTrap::guardGate()
 {
     std::cout << _Name + "is guarding the gate." << std::endl;
-}
-
-void ScavTrap::takeDamage(unsigned int amount)
-{
-    if(_hp - amount > 0)
-    {
-        _hp -= amount;
-        std::cout << _Name + " takes " << amount << " points of damage." << std::endl;
-    }
-    else
-    {
-        _hp = 0;
-        std::cout << _Name + "don't have hit points." << std::endl;
-    }
-}
-void ScavTrap::beRepaired(unsigned int amount)
-{
-    if(_ep > 0)
-    {
-        std::cout << _Name + " recover " << amount << " of hit points." <<std::endl; 
-        --_ep;
-    }
-    else
-        std::cout << _Name + " don't have enought energy."<< std::endl;
 }

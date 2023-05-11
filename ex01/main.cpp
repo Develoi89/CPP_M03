@@ -1,10 +1,11 @@
 #include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 
 int main()
 {
-    ClapTrap Goku;
-    ScavTrap Goten;
-    ScavTrap Gohan;
+    ClapTrap Goku("Goku");
+    ScavTrap Goten("Goten");
+    ScavTrap Gohan("Gohan");
 
     Gohan.guardGate();
     Goten.guardGate();
@@ -12,6 +13,7 @@ int main()
     Goku.takeDamage(50);
     Goku.beRepaired(5);
     Goten.attack("Goku");
+    Goten.beRepaired(5);
     Goku.takeDamage(50);
     Goku.beRepaired(5);
 }
