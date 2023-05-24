@@ -2,6 +2,7 @@
 
 ScavTrap::ScavTrap()
 {
+    _hp = 100;
     _ep = 50;
     _ad = 20;
     std::cout << "ScavTrap created." << std::endl;
@@ -9,6 +10,7 @@ ScavTrap::ScavTrap()
 ScavTrap::ScavTrap(std::string const Name)
 {
     _Name = Name;
+    _hp = 100;
     _ep = 50;
     _ad = 20;
     std::cout << Name << " ScavTrap created." << std::endl;
