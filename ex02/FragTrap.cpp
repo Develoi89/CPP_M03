@@ -38,7 +38,7 @@ void FragTrap::attack(const std::string &target)
 {
     if(_ep > 0 && _hp > 0)
     {
-        std::cout << _Name + " attacks so hard " + target + " causing " << _ad << " points of damage." << std::endl; 
+        std::cout << _Name + " attacks so efective " + target + " causing " << _ad << " points of damage." << std::endl; 
         --_ep;
     }
     else
