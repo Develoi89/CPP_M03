@@ -68,3 +68,18 @@ void ClapTrap::beRepaired(unsigned int amount)
     else
         std::cout << _Name + " don't have enought energy."<< std::endl;
 }
+
+unsigned int ClapTrap::get_hp()
+{
+    return _hp;
+}
+
+unsigned int ClapTrap::get_ep()
+{
+    return _ep;
+}
+
+unsigned int ClapTrap::get_ad()
+{
+    return _ad;
+}
