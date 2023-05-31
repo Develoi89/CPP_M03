@@ -15,3 +15,19 @@ int main()
     std::cout << "HealthPoints: " << Arcamime.get_hp() << std::endl;
     Arcamime.whoAmI();
 }
+
+// #include <iostream>
+// #include "DiamondTrap.hpp"
+
+// int main(void)
+// {
+//     DiamondTrap p7("Player_7");
+//     DiamondTrap p8("Player_8");
+//     p7.whoAmI();
+//     p8.whoAmI();
+
+//     p7.attack(p8.getName());
+//     p8.takeDamage(p7.get_ad());
+//     p8.beRepaired(5);
+//     return (0);
+// }

@@ -9,8 +9,9 @@ DiamondTrap::DiamondTrap()
 }
 DiamondTrap::DiamondTrap(std::string const Name)
 {
-    _Name = Name;
-    ClapTrap::_Name = _Name + "_clap_name";
+    // ClapTrap::setName(Name + "_clap_name");
+    this->_Name = Name;
+    this->ClapTrap::_Name = Name + "_clap_name";
     _hp = FragTrap::_hp;
     _ep = ScavTrap::_ep;
     _ad = FragTrap::_ad;
@@ -20,7 +21,7 @@ DiamondTrap::DiamondTrap(std::string const Name)
 DiamondTrap::DiamondTrap(DiamondTrap const &c)
 {
     _Name = c._Name;
-    ClapTrap::_Name = c._Name + "_clap_name";
+    // ClapTrap::setName(c._Name + "_clap_name");
     _hp = c._hp;
     _ep = c._ep;
     _ad = c._ad;
@@ -43,6 +44,6 @@ DiamondTrap::~DiamondTrap()
 
 void DiamondTrap::whoAmI()
 {
-    std::cout << "The name's DiamondTrap is" << _Name << std::endl;
-    std::cout << "The name's ClapTrap is" << ClapTrap::_Name << std::endl;
+    std::cout << "The name's DiamondTrap is " << this->_Name << std::endl;
+    std::cout << "The name's ClapTrap is " << ClapTrap::_Name << std::endl;
 }
