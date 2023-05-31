@@ -26,6 +26,9 @@ FragTrap::FragTrap(FragTrap const &c)
 FragTrap & FragTrap::operator = (FragTrap const &c)
 {
     this->_Name = c._Name;
+    _hp = c._hp;
+    _ep = c._ep;
+    _ad = c._ad;
     return *this;
 }
 

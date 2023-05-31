@@ -18,6 +18,9 @@ ClapTrap::ClapTrap(ClapTrap const &c) : _Name(c._Name) , _hp(100) , _ep(10) , _a
 ClapTrap & ClapTrap::operator = (ClapTrap const &c)
 {
     this->_Name = c._Name;
+    _hp = c._hp;
+    _ep = c._ep;
+    _ad = c._ad;
     return *this;
 }
 

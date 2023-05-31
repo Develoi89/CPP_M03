@@ -28,6 +28,9 @@ ScavTrap::ScavTrap(ScavTrap const &c)
 ScavTrap & ScavTrap::operator = (ScavTrap const &c)
 {
     this->_Name = c._Name;
+    _hp = c._hp;
+    _ep = c._ep;
+    _ad = c._ad;
     return *this;
 }
 

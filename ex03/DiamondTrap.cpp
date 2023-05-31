@@ -30,6 +30,9 @@ DiamondTrap::DiamondTrap(DiamondTrap const &c)
 DiamondTrap & DiamondTrap::operator = (DiamondTrap const &c)
 {
     this->_Name = c._Name;
+    _hp = c._hp;
+    _ep = c._ep;
+    _ad = c._ad;
     return *this;
 }
 
